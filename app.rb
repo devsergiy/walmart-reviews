@@ -2,7 +2,7 @@ require 'sinatra'
 require './walmart'
 
 get '/' do
-  haml :form, layout: "layout"
+  haml :form
 end
 
 post '/reviews' do
