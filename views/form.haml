@@ -1,0 +1,12 @@
+%h2 Find in reviews
+%form.col-sm-4{ action: "/reviews" , method: "post" }
+  .form-group
+    %label{ for: "item_id" }
+      Item id:
+    %input.form-control{ type: "string", name: "item_id" }
+  .form-group
+    %label{ for: "text" }
+      Text to search:
+    %textarea.form-control{ name: "text" }
+
+  %button.btn.btn-default{:type => "submit"} Submit

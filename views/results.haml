@@ -1,0 +1,13 @@
+%table.table
+  %caption Results
+  %thead
+    %tr
+      %th Reviewer
+      %th Review title
+      %th Review text
+  %tbody
+    - @reviews.each do |review|
+      %tr
+        %td= review["reviewer"]
+        %td= review["title"]
+        %td= review["reviewText"]
